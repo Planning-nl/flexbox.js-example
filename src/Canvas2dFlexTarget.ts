@@ -1,4 +1,4 @@
-import {FlexTarget} from "flexbox.js";
+import FlexTarget from 'flexbox.js/dist/FlexTarget';
 
 export default class Canvas2dFlexTarget extends FlexTarget {
     public color: string = "white";

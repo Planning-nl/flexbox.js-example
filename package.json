@@ -9,10 +9,10 @@
     "prepare": "npm run build"
   },
   "author": "",
-  "license": "ISC",
+  "license": "apache",
   "devDependencies": {
+    "flexbox.js": "^1.0.6",
     "awesome-typescript-loader": "^5.2.1",
-    "flexbox.js": "git+ssh://git@github.com/basvanmeurs/flexbox.js.git",
     "source-map-loader": "^0.2.4",
     "typescript": "^3.8.3",
     "webpack": "^4.42.0",
