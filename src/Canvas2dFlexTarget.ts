@@ -1,4 +1,4 @@
-import FlexTarget from 'flexbox.js/lib/FlexTarget';
+import FlexTarget from "flexbox.js/lib/FlexTarget";
 
 export default class Canvas2dFlexTarget extends FlexTarget {
     public color: string = "white";
@@ -26,6 +26,6 @@ export default class Canvas2dFlexTarget extends FlexTarget {
         context.fillRect(this.worldPx, this.worldPy, this.getLayoutW(), this.getLayoutH());
 
         const children = this.getChildren() as Canvas2dFlexTarget[];
-        children.forEach(child => child.draw(context));
+        children.forEach((child) => child.draw(context));
     }
 }

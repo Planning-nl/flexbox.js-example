@@ -18,7 +18,7 @@ export default function example(context: CanvasRenderingContext2D) {
 
     let direction = true;
     setInterval(() => {
-        context.clearRect(0, 0, 800, 800)
+        context.clearRect(0, 0, 800, 800);
 
         root.w = (root.w as number) - (direction ? 1 : -1);
 
@@ -31,7 +31,7 @@ export default function example(context: CanvasRenderingContext2D) {
 
         root.update();
         root.draw(context);
-    }, 16)
+    }, 16);
 }
 
 const colors = [
@@ -56,15 +56,14 @@ const colors = [
     "#000075",
     "#808080",
     "#ffffff",
-    "#000000"
+    "#000000",
 ];
 
 function getRandomColor() {
     return colors[Math.floor(colors.length * Math.random())];
 }
 
-
-const canvas = document.createElement('canvas');
+const canvas = document.createElement("canvas");
 canvas.width = 800;
 canvas.height = 800;
 document.body.appendChild(canvas);
@@ -75,5 +74,3 @@ if (context) {
 } else {
     console.log("Canvas2d not supported");
 }
-
-
