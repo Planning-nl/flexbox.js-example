@@ -17,8 +17,8 @@ export default function example(context: CanvasRenderingContext2D) {
     }
 
     let direction = true;
-    setInterval(() => {
-        context.clearRect(0, 0, 800, 800);
+    const loop = () => {
+        context.clearRect(0, 0, 800, 800)
 
         root.w = (root.w as number) - (direction ? 1 : -1);
 
@@ -31,7 +31,10 @@ export default function example(context: CanvasRenderingContext2D) {
 
         root.update();
         root.draw(context);
-    }, 16);
+        requestAnimationFrame(loop);
+    };
+
+    loop();
 }
 
 const colors = [
