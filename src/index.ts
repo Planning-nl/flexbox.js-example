@@ -1,6 +1,6 @@
-import Canvas2dFlexTarget from "./Canvas2dFlexTarget";
+import { Canvas2dFlexTarget } from "./Canvas2dFlexTarget";
 
-export default function example(context: CanvasRenderingContext2D) {
+export function example(context: CanvasRenderingContext2D) {
     const root = new Canvas2dFlexTarget();
     root.flex.enabled = true;
     root.flex.direction = "row";
